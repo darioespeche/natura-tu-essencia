@@ -3,7 +3,6 @@
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(to bottom, #fffdf5, #f5e9dc);
-  background-image: url("../assets/fondo-floral-claro.jpg");
   background-size: cover;
   background-position: center;
   color: var(--color3);

@@ -1,12 +1,24 @@
 .preloader {
-  position: fixed;
-  inset: 0;
-  background: var(--color2);
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #fffdf5, #f5e9dc);
+  background-size: cover;
+  background-position: center;
+  color: var(--color3);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  z-index: 9999;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: 0;
 }
 
 .preloader-logo {

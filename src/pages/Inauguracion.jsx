@@ -1,5 +1,6 @@
 import "./Inauguracion.css";
 import { motion } from "framer-motion";
+import { FaCalendarAlt, FaClock, FaMapMarkerAlt } from "react-icons/fa";
 
 function Inauguracion() {
   const handleMaps = () => {
@@ -31,13 +32,14 @@ function Inauguracion() {
         viewport={{ once: true }}
       >
         <p>
-          📅 <strong>6 de septiembre</strong>
+          <FaCalendarAlt className="icono" /> <strong>6 de septiembre</strong>
         </p>
         <p>
-          🕕 <strong>18:00 horas</strong>
+          <FaClock className="icono" /> <strong>18:00 horas</strong>
         </p>
         <p>
-          📌 <strong>Garibaldi y Viamonte</strong>
+          <FaMapMarkerAlt className="icono" />{" "}
+          <strong>Garibaldi y Viamonte</strong>
         </p>
       </motion.div>
 
