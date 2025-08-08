@@ -1,0 +1,29 @@
+.mensaje-luis {
+  background: linear-gradient(to top, #f7f3ef, #ffffff);
+  padding: 4rem 2rem;
+  text-align: center;
+  color: var(--color3);
+}
+
+.mensaje-titulo {
+  font-family: var(--fuente-titulos);
+  font-size: 2.5rem;
+  color: var(--color4);
+  margin-bottom: 2rem;
+}
+
+.mensaje-texto {
+  font-family: var(--fuente-texto);
+  font-size: 1.3rem;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--color3);
+}
+
+.firma-luis {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5rem;
+  margin-top: 5rem;
+  color: var(--color4);
+}

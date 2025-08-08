@@ -1,0 +1,30 @@
+.historia {
+  background: linear-gradient(to bottom, #fffdf5, #f1e9e1);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.historia-titulo {
+  font-family: var(--fuente-titulos);
+  font-size: 2.5rem;
+  color: var(--color4);
+  margin-bottom: 2rem;
+}
+
+.historia-texto {
+  font-family: var(--fuente-texto);
+  font-size: 1.4rem;
+  color: var(--color3);
+  margin-bottom: 1.2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.historia-firma {
+  font-style: italic;
+  color: var(--color4);
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
