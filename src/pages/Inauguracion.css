@@ -57,3 +57,19 @@
   background-color: #c1955f;
   transform: scale(1.05);
 }
+.boton-confirmar {
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--color4);
+  color: white;
+  font-family: var(--fuente-texto);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.boton-confirmar:hover {
+  transform: scale(1.05);
+}

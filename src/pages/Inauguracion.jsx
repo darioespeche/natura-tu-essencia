@@ -1,6 +1,12 @@
 import "./Inauguracion.css";
 import { motion } from "framer-motion";
-import { FaCalendarAlt, FaClock, FaMapMarkerAlt } from "react-icons/fa";
+import {
+  FaCalendarAlt,
+  FaClock,
+  FaMapMarkerAlt,
+  FaCoffee,
+} from "react-icons/fa";
+import Countdown from "../components/Countdown";
 
 function Inauguracion() {
   const handleMaps = () => {
@@ -35,14 +41,17 @@ function Inauguracion() {
           <FaCalendarAlt className="icono" /> <strong>6 de septiembre</strong>
         </p>
         <p>
-          <FaClock className="icono" /> <strong>18:00 horas</strong>
+          <FaClock className="icono" /> <strong>17:30 horas</strong>
+        </p>
+        <p>
+          <FaCoffee className="icono" /> <strong>18:00 Break Coffe</strong>
         </p>
         <p>
           <FaMapMarkerAlt className="icono" />{" "}
           <strong>Garibaldi y Viamonte</strong>
         </p>
       </motion.div>
-
+      <Countdown targetDate="2025-09-06T17:30:00" />
       <motion.button
         className="boton-mapa"
         onClick={handleMaps}
@@ -52,6 +61,21 @@ function Inauguracion() {
         viewport={{ once: true }}
       >
         Cómo llegar
+      </motion.button>
+      <motion.button
+        className="boton-confirmar"
+        onClick={() =>
+          window.open(
+            "https://wa.me/5493854721273text=Hola Luis!%20Confirmo%20mi%20presencia%20en%20la%20inauguración%20de%20Natura%20Tu%20Essencia%20el%206%20de%20septiembre.",
+            "_blank"
+          )
+        }
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.2, delay: 0.8 }}
+        viewport={{ once: true }}
+      >
+        Confirmar presencia
       </motion.button>
     </section>
   );

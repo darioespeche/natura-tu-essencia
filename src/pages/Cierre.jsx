@@ -1,6 +1,7 @@
 import "./Cierre.css";
 import { motion } from "framer-motion";
 import cupon from "../assets/cupon5.png";
+import confetti from "canvas-confetti";
 
 function Cierre() {
   const descargarCupon = () => {
@@ -8,6 +9,11 @@ function Cierre() {
     link.href = cupon;
     link.download = "cupon-natura-tu-essencia.png";
     link.click();
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 },
+    });
   };
 
   return (
@@ -30,7 +36,7 @@ function Cierre() {
         viewport={{ once: true }}
       >
         Como agradecimiento, te regalamos un{" "}
-        <strong>cupón del 5% de descuento</strong> en cualquier producto de la
+        <strong>cupón del 10% de descuento</strong> en cualquier producto de la
         tienda (excepto sección outlet) el día de la inauguracion.
         <br />
         <br />
@@ -47,6 +53,18 @@ function Cierre() {
       >
         Descargar cupón
       </motion.button>
+      <motion.a
+        className="boton-instagram"
+        href="https://www.instagram.com/natura_tu_essencia.ok/"
+        target="_blank"
+        rel="noopener noreferrer"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.2, delay: 0.9 }}
+        viewport={{ once: true }}
+      >
+        Ver Instagram
+      </motion.a>
     </section>
   );
 }

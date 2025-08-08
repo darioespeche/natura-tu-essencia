@@ -1,0 +1,34 @@
+.countdown {
+  margin-top: 2rem;
+  text-align: center;
+  font-family: var(--fuente-texto);
+}
+
+.countdown-titulo {
+  font-size: 1.2rem;
+  color: var(--color3);
+  margin-bottom: 1rem;
+}
+
+.countdown-numeros {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.countdown-numeros div {
+  background-color: #fff;
+  border: 2px solid var(--color4);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  color: var(--color4);
+}
+
+.countdown-numeros strong {
+  font-size: 1.5rem;
+  display: block;
+}
+
+.countdown-numeros span {
+  font-size: 0.9rem;
+}
