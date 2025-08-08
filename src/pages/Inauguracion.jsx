@@ -38,17 +38,16 @@ function Inauguracion() {
         viewport={{ once: true }}
       >
         <p>
-          <FaCalendarAlt className="icono" /> <strong>6 de septiembre</strong>
+          <FaCalendarAlt className="icono" /> 6 de septiembre
         </p>
         <p>
-          <FaClock className="icono" /> <strong>17:30 horas</strong>
+          <FaClock className="icono" /> 17:30 horas
         </p>
         <p>
-          <FaCoffee className="icono" /> <strong>18:00 Break Coffe</strong>
+          <FaCoffee className="icono" /> 18:00 Break Coffe
         </p>
         <p>
-          <FaMapMarkerAlt className="icono" />{" "}
-          <strong>Garibaldi y Viamonte</strong>
+          <FaMapMarkerAlt className="icono" /> Garibaldi y Viamonte
         </p>
       </motion.div>
       <Countdown targetDate="2025-09-06T17:30:00" />
@@ -66,7 +65,7 @@ function Inauguracion() {
         className="boton-confirmar"
         onClick={() =>
           window.open(
-            "https://wa.me/5493854721273text=Hola Luis!%20Confirmo%20mi%20presencia%20en%20la%20inauguración%20de%20Natura%20Tu%20Essencia%20el%206%20de%20septiembre.",
+            "https://wa.me/5493854721273?text=Hola Luis!%20Confirmo%20mi%20presencia%20en%20la%20inauguración%20de%20Natura%20Tu%20Essencia%20el%206%20de%20septiembre.",
             "_blank"
           )
         }
