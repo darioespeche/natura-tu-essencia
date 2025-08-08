@@ -11,7 +11,7 @@ import Countdown from "../components/Countdown";
 function Inauguracion() {
   const handleMaps = () => {
     window.open(
-      "https://www.google.com/maps/search/?api=1&query=Garibaldi+y+Viamonte",
+      "https://www.google.com/maps/place/Garibaldi+1194,+G4200+Santiago+del+Estero,+Argentina/@-27.8010969,-64.2567149,17z/data=!3m1!4b1!4m5!3m4!1s0x943b4df800f022c9:0xdec7468c6fe16bda!8m2!3d-27.8011017!4d-64.25414?entry=ttu&g_ep=EgoyMDI1MDgwNS4wIKXMDSoASAFQAw%3D%3D",
       "_blank"
     );
   };
@@ -47,7 +47,7 @@ function Inauguracion() {
           <FaCoffee className="icono" /> 18:00 Break Coffe
         </p>
         <p>
-          <FaMapMarkerAlt className="icono" /> Garibaldi y Viamonte
+          <FaMapMarkerAlt className="icono" /> Garibaldi 1194 casi Viamonte
         </p>
       </motion.div>
       <Countdown targetDate="2025-09-06T17:30:00" />
